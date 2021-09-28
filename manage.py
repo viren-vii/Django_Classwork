@@ -2,7 +2,9 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from decouple import config
 
+SECRET_KEY = config("SECRET_KEY")
 
 def main():
     """Run administrative tasks."""
